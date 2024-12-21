@@ -4,7 +4,12 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+       "darkCyan":"#097980",
+       "yellowGreen":"#D2F038",
+      }
+    },
   },
   plugins: [],
 };
