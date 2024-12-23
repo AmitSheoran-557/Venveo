@@ -1,0 +1,14 @@
+.slick-arrow{
+    display: none !important;
+}
+.slick-dots{
+    width: 90% !important;
+}
+.slick-dots li button:before {
+    color: darkcyan !important;
+}
+.slick-track{
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 120px !important;
+}

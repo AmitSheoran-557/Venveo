@@ -23,14 +23,12 @@ const Header = () => {
   };
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto max-w-[1440px]">
       <div className="flex justify-between max-lg:pt-5 max-md:pt-4 max-lg:items-center text-white relative">
-        {/* Logo */}
         <a href="/">
           <img className='xl:max-w-[59px] lg:max-w-12 md:max-w-10 max-w-7 lg:pt-[29px] xl:ml-[57px] lg:ml-12 md:ml-8 ml-4' src={logo} alt="venveo-logo" />
         </a>
 
-        {/* Mobile Menu Button */}
         <button onClick={handleOpen}
           className={`hidden size-6 justify-center max-lg:absolute max-lg:right-4 relative z-[60] max-lg:flex flex-col overflow-hidden`}>
           <span
@@ -41,7 +39,6 @@ const Header = () => {
           ></span>
         </button>
 
-        {/* Navigation Menu */}
         <div className='flex max-h-20'>
           <div className={`flex gap-[42px] bg-white !text-black max-lg:text-white ps-[41px] pe-[29px] py-[30px] lg:max-h-max max-lg:fixed max-lg:top-0 max-lg:h-full max-lg:w-full max-lg:flex-col max-lg:bg-white max-lg:duration-300 max-lg:justify-center max-lg:items-center z-40 ${open ? 'max-lg:left-0' : 'max-lg:left-full'}`}>
             {HEADER_DATA_LIST.map((obj, index) => (
@@ -50,9 +47,9 @@ const Header = () => {
                   {obj.name} <span className='text-[6px]'>{obj.icon}</span>
                 </p>
                 {obj.submenu && activeIndex === index && (
-                  <div className='absolute right-0 bg-black text-white px-7 py-3 rounded mt-2'>
+                  <div className='absolute right-0 lg:bg-white lg:!text-black bg-black flex flex-col gap-3 text-white px-7 py-3 rounded mt-2'>
                     {obj.submenu.map((item, index) => (
-                      <p onClick={() => setActiveIndex(null)} key={index} className='text-white'>{item}</p>
+                      <p onClick={handleOpen} key={index} className='cursor-pointer'>{item}</p>
                     ))}
                   </div>)}
               </div>
@@ -76,7 +73,7 @@ const Header = () => {
                           <span className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md -rotate-45  -translate-y-[2px]`} ></span>
                         </button>
                       </div>
-                      <input type="text" placeholder="Type to search..."
+                      <input type="text" required placeholder="Type to search..."
                         className="w-full border placeholder:text-blue-500 text-blue-500 border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-blue-200"
                         autoFocus />
                       <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition" onClick={toggleModal} >
@@ -88,7 +85,7 @@ const Header = () => {
               )}
             </div>
           </div>
-          <button className='bg-yellowGreen max-lg:hidden px-[31px] flex items-center justify-center gap-1 text-black text-[15px] text-center font-semibold'>Let’s Talk <ArrowIcon /> </button>
+          <button className='bg-yellowGreen max-lg:hidden px-[31px] hover:bg-[#0D99A0] duration-300 ease-in-out flex items-center justify-center gap-1 text-black text-[15px] text-center font-semibold'>Let’s Talk <ArrowIcon /> </button>
         </div>
       </div>
 

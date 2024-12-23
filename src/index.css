@@ -1,7 +1,8 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
   font-family: "MaisonNeue";
   src: url(./assets/font/Maison-Neue.ttf) format("truetype");
@@ -24,17 +25,29 @@
 
 @font-face {
   font-family: "MaisonNeueLight";
-  src: url(./assets/font/MaisonNeue-Light.ttf) format("truetype");
-}
+  src: url("./assets/font/MaisonNeue-Light.otf") format("truetype");
+ }
 
 @font-face {
   font-family: "SohneSchmal";
   src: url(./assets/font/TestSohneSchmal-Dreiviertelfett-BF663d89cad1b90.otf)
     format("opentype");
 }
-.font-MaisonNeue{
-  font-family: "MaisonNeue";
+.font-maisonNeue {
+  font-family: "maisonNeue" !important;
 }
-.font-SohneSchmal{
-  font-family: "SohneSchmal";
+.font-maisonNeueDemi {
+  font-family: "maisonNeueDemi" !important;
+}
+.font-maisonNeueMedium {
+  font-family: "maisonNeueMedium" !important;
+}
+.font-maisonNeueBook {
+  font-family: "maisonNeueBook" !important;
+}
+.font-maisonNeueLight {
+  font-family: "maisonNeueLight" !important;
+}
+.font-sohneSchmal {
+  font-family: "SohneSchmal" !important;
 }
