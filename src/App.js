@@ -1,17 +1,16 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Features from './components/Features';
-import Hero from './components/Hero';
-import Marketing from './components/Marketing';
-import SatisfiedClient from './components/SatisfiedClient';
+  // import GrowthPartner from './components/GrowthPartner';
+  // import OutSmart from './components/OutSmart';
+import Home from './view/Home';
 
 function App() {
   return (
-   <div>
-    <Hero/>
-    <Features/>
-    <SatisfiedClient/>
-    <Marketing/>
-   </div>
+  <BrowserRouter>
+  <Routes>
+    <Route path='/' element={<Home/>} />
+  </Routes>
+  </BrowserRouter>
   );
 }
 

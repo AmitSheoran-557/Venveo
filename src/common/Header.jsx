@@ -55,19 +55,15 @@ const Header = () => {
               </div>
             ))}
 
-            <button className='lg:hidden max-lg:block'><img src={startBtn} alt="satrt-btn" /></button>
+            <button onClick={handleOpen} className='lg:hidden max-lg:block hover:scale-[1.05] duration-300 transition-all ease-linear'><img src={startBtn} alt="satrt-btn" /></button>
             <div className='cursor-pointer' onClick={toggleModal}>
               <SearchIcon />
-              {/* Modal */}
               {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                  {/* Modal Content */}
                   <div className="relative bg-white w-4/5 max-w-md p-6 rounded-lg shadow-lg">
-                    {/* Search Input */}
                     <div className="flex flex-col gap-4">
                       <div className='flex justify-between items-center'>
                         <h2 className="text-lg font-medium text-gray-800">Search</h2>
-                        {/* Close Icon */}
                         <button className={`size-6 justify-center relative z-[60] bg-white flex flex-col`}>
                           <span className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md rotate-45 translate-x-[.50px] translate-y-0`} >  </span>
                           <span className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md -rotate-45  -translate-y-[2px]`} ></span>
@@ -88,13 +84,6 @@ const Header = () => {
           <button className='bg-yellowGreen max-lg:hidden px-[31px] hover:bg-[#0D99A0] duration-300 ease-in-out flex items-center justify-center gap-1 text-black text-[15px] text-center font-semibold'>Let’s Talk <ArrowIcon /> </button>
         </div>
       </div>
-
-      {/* Overlay to close dropdown when clicking outside
-      {activeIndex !== null && (
-        <div onClick={() => setActiveIndex(null)}
-          className="  top-0 left-0 w-full min-h-screen relative  opacity-50 z-[50]"
-        ></div>
-      )} */}
     </div>
   );
 };

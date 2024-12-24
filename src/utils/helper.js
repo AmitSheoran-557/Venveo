@@ -1,7 +1,7 @@
 import logoImgOne from '../../src/assets/image/png/client-card-logo-1.png'
 import logoImgTwo from '../../src/assets/image/png/client-card-logo-2.png'
 import logoImgThree from '../../src/assets/image/png/client-card-logo-3.png'
-import { cplIcon, crossIcon, trafficIcon, leadsIcon, } from "./icons";
+import { CplIcon, CrossIcon, TrafficIcon, LeadsIcon, } from "./icons";
 
 export const HEADER_DATA_LIST = [
   {
@@ -90,7 +90,7 @@ export const CLIENTS_DATA_LIST = [
 ];
 export const MARKETING_CARD_LIST = [
   {
-    logo: <trafficIcon />,
+    logo: <TrafficIcon />,
     title: "My website isn’t getting enough traffic",
     description:
       "Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.",
@@ -100,7 +100,7 @@ export const MARKETING_CARD_LIST = [
     btn: "Explore SEO Services ",
   },
   {
-    logo: <cplIcon />,
+    logo: <CplIcon />,
     title: "My CPL from digital ad campaigns is too high",
     description:
       "Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.",
@@ -110,7 +110,7 @@ export const MARKETING_CARD_LIST = [
     btn: "Explore SEO Services ",
   },
   {
-    logo: <leadsIcon />,
+    logo: <LeadsIcon />,
     title: "My website isn’t generating enough leads",
     description:
       "Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.",
@@ -120,7 +120,7 @@ export const MARKETING_CARD_LIST = [
     btn: "Explore SEO Services ",
   },
   {
-    logo: <crossIcon />,
+    logo: <CrossIcon />,
     title: "My marketing and sales data is disconnected",
     description:
       "Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.",
