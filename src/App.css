@@ -16,3 +16,9 @@
     opacity: 100%;
     transition: all 300ms linear;
 }
+.swiper-button-next:after{
+    display: none !important;
+}
+.swiper-button-prev:after{
+    display: none !important;
+}

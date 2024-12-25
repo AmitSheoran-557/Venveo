@@ -1,6 +1,7 @@
 import logoImgOne from '../../src/assets/image/png/client-card-logo-1.png'
 import logoImgTwo from '../../src/assets/image/png/client-card-logo-2.png'
 import logoImgThree from '../../src/assets/image/png/client-card-logo-3.png'
+import sliderImgOne from '../../src/assets/image/png/slider-img-1.png'
 import { CplIcon, CrossIcon, TrafficIcon, LeadsIcon, } from "./icons";
 
 export const HEADER_DATA_LIST = [
@@ -128,5 +129,43 @@ export const MARKETING_CARD_LIST = [
     listTwo: "Prioritize leads with data-backed insights",
     listThree: "Turn opportunities into closed deals",
     btn: "Explore SEO Services ",
+  },
+];
+
+export const RESULT_SLIDER_LIST = [
+  {
+    image: sliderImgOne,
+    description:
+      "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+    name: "Jon Vaughan",
+    title: "REGIONAL VP-SE AT US LBM",
+  },
+  {
+    image:sliderImgOne,
+    description:
+      "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+    name: "Jon Vaughan",
+    title: "REGIONAL VP-SE AT US LBM",
+  },
+  {
+    image:sliderImgOne,
+    description:
+      "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+    name: "Jon Vaughan",
+    title: "REGIONAL VP-SE AT US LBM",
+  },
+  {
+    image:sliderImgOne,
+    description:
+      "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+    name: "Jon Vaughan",
+    title: "REGIONAL VP-SE AT US LBM",
+  },
+  {
+    image:sliderImgOne,
+    description:
+      "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging and cultural standpoint.",
+    name: "Jon Vaughan",
+    title: "REGIONAL VP-SE AT US LBM",
   },
 ];
