@@ -11,7 +11,7 @@ const Marketing = () => {
             <Description className="!font-light xl:!text-3xl mx-auto text-center lg:!text-2xl md:!text-xl !text-base lg:mb-[7px] mb-1" tittle="Problems we solve." />
             <CustomHeading className="lg:mb-[25px] mb-4 uppercase !leading-[90%] max-w-[502px] mx-auto" tittle="Digital Marketing for today’s Business" />
             <Description className="!font-light lg:!text-[15px] max-lg:px-4 !text-sm font-maisonNeueLight mx-auto text-center lg:max-w-[440px] max-w-lg xl:mb-[85px] lg:!mb-14 md:!mb-10 mb-7" tittle="We help companies scale their strategies across multiple channels to drive more revenue, more quickly, without cutting corners." />
-            <img src={bgYellow} alt="yellow-line" className="w-full absolute z-10 translate-y-[6rem]"/>
+            <img src={bgYellow} alt="yellow-line" className="w-full absolute z-10 translate-y-[6rem]" />
             <div className="flex flex-wrap gap-[66px] max-md:gap-6 justify-center lg:pt-10 max-sm:mx-4 max-w-[1920px] mx-auto">
                 {MARKETING_CARD_LIST.map((obj, i) => (
                     <div key={i}
@@ -20,14 +20,14 @@ const Marketing = () => {
                             <p>{obj.logo}</p>
                             <div>
                                 <h3 className="text-black font-light text-[30px] leading-[30px] max-w-[325px]">{obj.title}</h3>
-                                <p className="text-black font-normal max-w-[315px] tracking-[2px] pt-5 leading-[20px] text-customsm">{obj.description}</p>
+                                <p className="text-black font-normal max-w-[315px] tracking-[2px] pt-5 leading-[20px] text-[15px]">{obj.description}</p>
                                 <ul className="list-disc pl-5 mt-7 max-w-[285px]">
-                                    <li className='font-semibold text-black leading-[20px] text-customsm'>{obj.listOne}</li>
-                                    <li className='font-semibold text-black leading-[20px] text-customsm'>{obj.listTwo}</li>
-                                    <li className='font-semibold text-black leading-[20px] text-customsm'>{obj.listThree}</li>
+                                    <li className='font-semibold text-black leading-[20px] text-[15px]'>{obj.listOne}</li>
+                                    <li className='font-semibold text-black leading-[20px] text-[15px]'>{obj.listTwo}</li>
+                                    <li className='font-semibold text-black leading-[20px] text-[15px]'>{obj.listThree}</li>
                                 </ul>
-                                <button className="mt-[52px] flex items-center gap-2 max-md:mt-8 max-sm:mt-6 text-customsm font-semibold leading-[20px]">
-                                    {obj.btn} <BtnArrow />
+                                <button className="mt-[52px] flex items-center gap-2 max-md:mt-8 max-sm:mt-6 text-[15px] font-semibold leading-[20px]">
+                                    {obj.btn} <span className='mt-1'><BtnArrow /></span>
                                 </button>
                             </div>
                         </div>

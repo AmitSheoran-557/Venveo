@@ -49,6 +49,8 @@ export const HEADER_DATA_LIST = [
 export const CLIENTS_DATA_LIST = [
   {
     tittle: "Education Company",
+    bgBlack: "#000000",
+    color:"#ffffff",
     logo: logoImgOne,
     maxWidth: "131px",
     heading: "Driving digital revenue for over 1,000+ satisfied clients.",
@@ -131,7 +133,6 @@ export const MARKETING_CARD_LIST = [
     btn: "Explore SEO Services ",
   },
 ];
-
 export const RESULT_SLIDER_LIST = [
   {
     image: sliderImgOne,
