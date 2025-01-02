@@ -51,7 +51,7 @@ const Features = () => {
     };
     return (
         <div className='flex justify-center flex-col items-center xl:-mt-[197px] lg:-mt-40 -mt-32'>
-            <Description className="lg:mb-[49px] mb-7" tittle="Featured in" />
+            <Description className="lg:mb-[49px] mb-7 font-spaceMono" tittle="Featured in" />
             <div className='max-w-[1025px] w-full mx-auto'>
                 <Slider {...settings} className='px-4 xl:px-0.5'>
                     <img className='xl:mr-[122px] lg:mr-24 md:mr-20 mr-12 lg:max-w-[49px] max-w-10' src={logoOne} alt="logo-img-1" />

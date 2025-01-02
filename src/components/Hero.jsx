@@ -10,8 +10,8 @@ import greenLine from './../assets/image/png/green-underline.png'
 const Hero = () => {
     return (
         <div>
-            <div className='bg-darkCyan relative xl:pb-[322px] lg:pb-60 sm:pb-56 pb-[175px]'>
-                <img className='xl:max-w-[364px] lg:max-w-[240px] max-w-[180px] w-full absolute left-0 pointer-events-none' src={leftSideImg} alt="side-vector-img" />
+            <div className='bg-darkCyan relative xl:pb-[306px] lg:pb-60 sm:pb-56 pb-[175px]'>
+                <img className='xl:max-w-[364px] xl:h-[75%] lg:max-w-[240px] max-w-[180px] w-full absolute left-0 pointer-events-none' src={leftSideImg} alt="side-vector-img" />
                 <img className='bottom-0 absolute right-0 max-lg:hidden lg:block max-xl:max-w-[240px]' src={rightSideImg} alt="right-img" />
                 <Header />
                 <div className='max-w-[1140px] mx-auto w-full px-4 pt-[39px] relative'>
@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
             </div>
             <img className='translate-y-2 w-full' src={blueLine} alt="blue-line-img" />
-            <img className='xl:max-w-[924px] max-xl:px-4 max-w-[800px] sm:block max-sm:hidden w-full mx-auto xl:-translate-y-[290px] lg:-translate-y-48 -translate-y-44' src={overlayImg} alt="overlay-img" />
+            <img className='xl:max-w-[924px] max-xl:px-4 max-w-[800px] sm:block max-sm:hidden w-full mx-auto xl:-translate-y-[275px] lg:-translate-y-48 -translate-y-44' src={overlayImg} alt="overlay-img" />
             <img className='xl:max-w-[924px] max-w-[800px] sm:hidden max-sm:block max-h-[335px] max-sm:max-w-[328px] w-full mx-auto -translate-y-[127px]' src={smOverlayImg} alt="overlay-img" />
         </div>
     )

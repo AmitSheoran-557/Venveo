@@ -6,6 +6,9 @@ import SatisfiedClient from '../components/SatisfiedClient'
 import GrowthPartner from '../components/GrowthPartner'
 import OutSmart from '../components/OutSmart'
 import ActualResult from '../components/ActualResult'
+import LearnForm from '../components/LearnForm'
+import Goals from '../components/Goals'
+import Footer from '../common/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
         <OutSmart/>
         <GrowthPartner/>
         <ActualResult/>
+        <LearnForm/>
+        <Goals/>
+        <Footer/>
     </div>
   )
 }

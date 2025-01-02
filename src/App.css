@@ -25,15 +25,19 @@
 .scrollbar::-webkit-scrollbar {
   display: none;
 }
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  background-color: white !important;
-  border-radius: 0 !important;
-}
 .swiper-slide {
-    opacity: 0.2;
-    transition: opacity 0.3s ease;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+.swiper-slide-active {
+  opacity: 1;
 }
 
-.swiper-slide-active {
-    opacity: 1;
+.swiper-pagination-bullet{
+  border-radius: 0 !important;
+  background: #FFFFFF4D !important;
+ 
+}
+.swiper-pagination-bullet-active{
+background: white !important;
 }

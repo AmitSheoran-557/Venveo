@@ -4,7 +4,6 @@ import { ArrowIcon, SearchIcon } from '../utils/icons';
 import startBtn from './../assets/image/png/sm-btn-img.png'
 import logo from './../assets/image/png/venveo-logo.png'
 
-
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -59,20 +58,40 @@ const Header = () => {
             <div className='cursor-pointer' onClick={toggleModal}>
               <SearchIcon />
               {isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                  <div className="relative bg-white w-4/5 max-w-md p-6 rounded-lg shadow-lg">
+                <div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+                  onClick={toggleModal}  
+                >
+                  <div
+                    className="relative bg-white w-4/5 max-w-md p-6 rounded-lg shadow-lg"
+                    onClick={(e) => e.stopPropagation()} 
+                  >
                     <div className="flex flex-col gap-4">
-                      <div className='flex justify-between items-center'>
+                      <div className="flex justify-between items-center">
                         <h2 className="text-lg font-medium text-gray-800">Search</h2>
-                        <button className={`size-6 justify-center relative z-[60] bg-white flex flex-col`}>
-                          <span className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md rotate-45 translate-x-[.50px] translate-y-0`} >  </span>
-                          <span className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md -rotate-45  -translate-y-[2px]`} ></span>
+                        <button
+                          className={`size-6 justify-center relative z-[60] bg-white flex flex-col`}
+                          onClick={toggleModal} 
+                        >
+                          <span
+                            className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md rotate-45 translate-x-[.50px] translate-y-0`}
+                          ></span>
+                          <span
+                            className={`w-6 transition-all duration-300 h-0.5 bg-black rounded-md -rotate-45  -translate-y-[2px]`}
+                          ></span>
                         </button>
                       </div>
-                      <input type="text" required placeholder="Type to search..."
+                      <input
+                        type="text"
+                        required
+                        placeholder="Type to search..."
                         className="w-full border placeholder:text-blue-500 text-blue-500 border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-blue-200"
-                        autoFocus />
-                      <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition" onClick={toggleModal} >
+                        autoFocus
+                      />
+                      <button
+                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                        onClick={toggleModal}
+                      >
                         Submit
                       </button>
                     </div>
@@ -81,7 +100,7 @@ const Header = () => {
               )}
             </div>
           </div>
-          <button className='bg-yellowGreen max-lg:hidden px-[31px] hover:bg-[#0D99A0] duration-300 ease-in-out flex items-center justify-center gap-1 text-black text-[15px] text-center font-semibold'>Let’s Talk <ArrowIcon /> </button>
+          <button className='bg-yellowGreen max-lg:hidden px-[31px] hover:bg-[#0D99A0] duration-300 ease-in-out flex items-center justify-center gap-1 text-black text-[15px] group text-center font-semibold'>Let’s Talk <span className='group-hover:translate-x-3 transition-all ease-linear'><ArrowIcon /></span>  </button>
         </div>
       </div>
     </div>

@@ -3,51 +3,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "MaisonNeue";
   src: url(./assets/font/Maison-Neue.ttf) format("truetype");
 }
-
-@font-face {
-  font-family: "MaisonNeueDemi";
-  src: url(./assets/font/MaisonNeue-Demi.ttf) format("truetype");
-}
-
 @font-face {
   font-family: "MaisonNeueMedium";
   src: url(./assets/font/MaisonNeue-Medium.ttf) format("truetype");
 }
-
-@font-face {
-  font-family: "MaisonNeueBook";
-  src: url(./assets/font/MaisonNeue-Book.ttf) format("truetype");
-}
-
 @font-face {
   font-family: "MaisonNeueLight";
   src: url("./assets/font/MaisonNeue-Light.otf") format("truetype");
- }
-
+}
 @font-face {
   font-family: "SohneSchmal";
-  src: url(./assets/font/TestSohneSchmal-Dreiviertelfett-BF663d89cad1b90.otf)
-    format("opentype");
+  src: url("./assets/font/sohne-schmal-fett.woff2") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "SohneSchmal";
+  src: url("./assets/font/soehne-schmal-dreiviertelfett.woff2")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "space-mono";
+  src: url("./assets/font/SpaceMono-Regular.ttf") format("truetype");
+ }
 .font-maisonNeue {
   font-family: "maisonNeue" !important;
 }
-.font-maisonNeueDemi {
-  font-family: "maisonNeueDemi" !important;
-}
+ 
 .font-maisonNeueMedium {
   font-family: "maisonNeueMedium" !important;
 }
-.font-maisonNeueBook {
-  font-family: "maisonNeueBook" !important;
-}
+ 
 .font-maisonNeueLight {
   font-family: "maisonNeueLight" !important;
 }
 .font-sohneSchmal {
   font-family: "SohneSchmal" !important;
+}
+.font-spaceMono {
+  font-family: "space-mono" !important;
 }
