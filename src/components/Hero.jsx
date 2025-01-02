@@ -11,15 +11,15 @@ const Hero = () => {
     return (
         <div>
             <div className='bg-darkCyan relative xl:pb-[306px] lg:pb-60 sm:pb-56 pb-[175px]'>
-                <img className='xl:max-w-[364px] xl:h-[75%] lg:max-w-[240px] max-w-[180px] w-full absolute left-0 pointer-events-none' src={leftSideImg} alt="side-vector-img" />
+                <img className='xl:max-w-[364px] xl:h-[75%] lg:max-w-[240px] max-w-[180px] max-sm:max-w-[139px] max-sm:h-[261px] w-full absolute left-0 pointer-events-none' src={leftSideImg} alt="side-vector-img" />
                 <img className='bottom-0 absolute right-0 max-lg:hidden lg:block max-xl:max-w-[240px]' src={rightSideImg} alt="right-img" />
                 <Header />
-                <div className='max-w-[1140px] mx-auto w-full px-4 pt-[39px] relative'>
+                <div className='max-w-[1140px] mx-auto w-full px-4 lg:pt-[39px] pt-11 relative'>
                     <div>
                         <h1 className='xl:text-[120px] lg:text-8xl md:text-7xl text-6xl font-SohneSchmal uppercase text-center text-white !leading-[90%] max-w-[649px] w-full mb-3 mx-auto'>Make marketing <br /> a growth machine</h1>
                         <img className='xl:max-w-[256px] max-w-48 lg:translate-x-[300px] translate-x-72 max-lg:hidden lg:block -translate-y-[14px]' src={greenLine} alt="green-bg" />
                     </div>
-                    <p className='text-white !leading-[125%] mx-auto text-center max-w-[656px] lg:text-2xl text-[22px] lg:-mt-3 font-light mb-7'>We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.</p>
+                    <p className='text-white !leading-[125%] max-sm:px-3 mx-auto text-center max-w-[656px] lg:text-2xl text-[22px] lg:-mt-3 font-light mb-7'>We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.</p>
                     <form className='py-[18.5px] flex justify-between border-[2px] border-white rounded-full max-w-[448px] mx-auto lg:ps-[34px] lg:pe-[37px] max-lg:px-6'>
                         <input type="text" required placeholder='Enter Your Website' className='placeholder:text-white placeholder:opacity-[60%] outline-none text-white opacity-[60%] bg-transparent' />
                         <button className='text-white font-semibold text-[15px] '>Analyze</button>

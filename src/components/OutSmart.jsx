@@ -13,7 +13,7 @@ const OutSmart = () => {
                         <Description className="!text-[15px] lg:mb-[7px] mb-1 sm:block max-sm:hidden" tittle="Get a free competitive analysis on your market" />
                         <Description className="lg:!text-[40px] !text-3xl !text-start !font-maisonNeue !font-light sm:block max-sm:hidden !leading-[90%]" tittle="Outsmart your competition" />
                         <Description className="!text-[15px] lg:mb-[7px] mb-1 sm:hidden max-sm:block" tittle="Get Your Custom Marketing Plan" />
-                        <Description className="lg:!text-[40px] !text-3xl !font-light sm:hidden max-sm:block !font-maisonNeue" tittle="Start earning more money now" />
+                        <Description className="lg:!text-[40px] !text-3xl !font-light sm:hidden max-sm:block max-sm:pe-20 !font-maisonNeue" tittle="Start earning more money now" />
                     </div>
                 </div>
                 <img src={CurveLine} alt="line" className='absolute translate-x-[33px] translate-y-12 max-xl:hidden' />

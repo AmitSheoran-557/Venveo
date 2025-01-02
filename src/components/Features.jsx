@@ -50,7 +50,7 @@ const Features = () => {
         ]
     };
     return (
-        <div className='flex justify-center flex-col items-center xl:-mt-[197px] lg:-mt-40 -mt-32'>
+        <div className='flex justify-center flex-col items-center xl:-mt-[197px] lg:-mt-40 -mt-28'>
             <Description className="lg:mb-[49px] mb-7 font-spaceMono" tittle="Featured in" />
             <div className='max-w-[1025px] w-full mx-auto'>
                 <Slider {...settings} className='px-4 xl:px-0.5'>

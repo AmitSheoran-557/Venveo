@@ -7,11 +7,11 @@ import bgYellow from './../assets/image/png/yellow-line.png'
 
 const Marketing = () => {
     return (
-        <div className="pt-[122px] pb-[129px] max-xl:py-28 max-lg:py-20 max-md:py-16 max-sm:py-12 relative">
+        <div className="pt-[122px] pb-[129px] max-xl:py-28 max-lg:py-20 max-md:py-16 max-sm:py-12 relative overflow-hidden">
             <Description className="!font-light xl:!text-3xl mx-auto text-center !text-2xl max-lg:px-3 lg:mb-[7px] mb-1" tittle="Problems we solve." />
             <CustomHeading className="lg:mb-[22px] mb-4 uppercase !leading-[90%] max-w-[502px] lg:!text-[80px] max-lg:px-3 !text-[60px] mx-auto" tittle="Digital Marketing for today’s Business" />
-            <Description className="!font-light lg:!text-[15px] max-lg:px-14 !text-sm font-maisonNeueLight mx-auto text-center lg:max-w-[620px] max-w-lg xl:!mb-[40px] lg:!mb-14 md:!mb-10 !ZZZZZZmb-7 font-spaceMono" tittle="We help companies scale their strategies across multiple channels to drive more revenue, more quickly, without cutting corners." />
-            <img src={bgYellow} alt="yellow-line" className="w-full absolute z-10 translate-y-[6rem]" />
+            <Description className="!font-light lg:!text-[15px] max-lg:px-14 !text-sm font-maisonNeueLight mx-auto text-center lg:max-w-[620px] max-w-lg xl:!mb-[40px] lg:!mb-14 md:!mb-10 mb-[92px] !ZZZZZZmb-7 font-spaceMono" tittle="We help companies scale their strategies across multiple channels to drive more revenue, more quickly, without cutting corners." />
+            <img src={bgYellow} alt="yellow-line" className="w-full absolute z-10 sm:translate-y-[6rem] max-sm:top-[14%] max-sm:min-w-[1200px]" />
             <div className="flex flex-wrap gap-x-[66px] gap-y-[57px] space max-md:gap-6 justify-center lg:pt-10 max-sm:mx-4 max-w-[1920px] mx-auto">
                 {MARKETING_CARD_LIST.map((obj, i) => (
                     <div key={i}
