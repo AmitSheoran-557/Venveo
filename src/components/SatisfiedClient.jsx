@@ -15,17 +15,17 @@ const SatisfiedClient = () => {
             </div>
             <div className='flex flex-wrap justify-center items-center lg:gap-[60px] sm:gap-10 gap-7'>
                 {CLIENTS_DATA_LIST.map((obj, index) => (
-                    <div className={`max-w-[440px] lg:px-[29px] md:px-6 sm:px-5 px-4 lg:min-h-[500px] sm:min-h-[350px] min-h-[340px] lg:pt-[35px] md:pt-7 sm:pt-6 pt-5 bg-cover ${index === 1 ? "bg-cardImgTwo" : index === 2 ? "bg-cardImgThree" : "bg-cardImgOne"}`} key={index} >
-                        <div className='rounded-[25px] max-w-[382px] lg:px-7 sm:px-5 px-4 lg:pt-[38px] lg:pb-[31px] max-lg:py-7 max-sm:py-5 bg-white lg:min-h-[360px] min-h-[250px] lg:mb-[13px] mb-2 relative'>
-                            <div className="max-w-[165px] absolute -top-[14px] lg:min-w-[165px] lg:ps-3 ps-2 w-full lg:py-[7px] py-1 rounded-full duration-300 ease-linear " style={{ backgroundColor: obj.bgBlack, color: obj.color }}>
+                    <div className={`max-w-[440px] lg:px-[29px] md:px-6 sm:px-5 px-4 lg:min-h-[500px] sm:min-h-[350px] min-h-[460px] pt-[35px] bg-cover ${index === 1 ? "bg-cardImgTwo" : index === 2 ? "bg-cardImgThree" : "bg-cardImgOne"}`} key={index} >
+                        <div className='rounded-[25px] max-w-[382px] lg:px-7 sm:px-5 px-[22px] !pt-[38px] !pb-[32px] max-lg:py-7 max-sm:py-5 bg-white lg:min-h-[360px] min-h-[250px] mb-[13px] relative'>
+                            <div className="max-w-[165px] absolute max-lg:hidden -top-[14px] lg:min-w-[165px] lg:ps-3 ps-2 w-full lg:py-[7px] py-1 rounded-full duration-300 ease-linear " style={{ backgroundColor: obj.bgBlack, color: obj.color }}>
                                 <p className='text-black font-semibold text-xs font-maisonNeue' style={{ color: obj.color }}>{obj.tittle}</p>
                             </div>
-                            <div className='xl:mb-6 lg:mb-5 mb-4'>
+                            <div className='mb-6'>
                                 <img src={obj.logo} style={{ maxWidth: obj.maxWidth }} alt="logo-img" />
                             </div>
-                            <h3 className='text-black font-light lg:text-3xl text-2xl xl:mb-6 maisonNeueBook !leading-[100%] lg:mb-5 mb-4'>{obj.heading}</h3>
-                            <p className='text-black lg:text-[15px] text-xs max-w-[315px] xl:mb-6 lg:mb-5 mb-4 font-spaceMono !leading-[133%] font-normal'>{obj.Description}</p>
-                            <div className='absolute lg:bottom-[31px] group cursor-pointer bottom-4 flex justify-center items-center gap-2 lg:left-[29px] '>
+                            <h3 className='text-black font-light lg:text-3xl text-2xl max-sm:max-w-[260px] xl:mb-6 font-maisonNeueLight !leading-[100%] lg:mb-5 mb-4'>{obj.heading}</h3>
+                            <p className='text-black lg:text-[15px] text-xs max-w-[315px] max-sm:max-w-[180px] xl:mb-6 lg:mb-5 mb-[74px] font-spaceMono !leading-[133%] font-normal'>{obj.Description}</p>
+                            <div className='absolute bottom-[31px] group cursor-pointer flex justify-center items-center gap-2 lg:left-[29px] '>
                                 {obj.btnPara} <span className='mt-1 group group-hover:translate-x-3 transition-all ease-linear'><LearnMoreIcon /></span>
                             </div>
                         </div>

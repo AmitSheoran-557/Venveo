@@ -2,11 +2,11 @@ import React from 'react'
 import Header from '../common/Header'
 import overlayImg from './../assets/image/png/Hero-overlap-img.png'
 import smOverlayImg from './../assets/image/png/sm-overlay-img.png'
-import leftSideImg from './../assets/image/png/hero-side-img.png'
-import rightSideImg from './../assets/image/png/right-vector-img.png'
-import blueLine from './../assets/image/png/blue-line-2.png'
-import greenLine from './../assets/image/png/green-underline.png'
-
+import leftSideImg from './../assets/image/png/hero-side-img.png'    
+import rightSideImg from './../assets/image/png/right-vector-img.png'    
+import blueLine from './../assets/image/png/blue-line-2.png'    
+import greenLine from './../assets/image/png/green-underline.png'    
+    
 const Hero = () => {
     return (
         <div>
