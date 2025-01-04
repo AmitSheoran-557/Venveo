@@ -1,7 +1,7 @@
 import React from 'react'
 import { FOOTER_LIST, MEDIA_ICON_LIST } from '../utils/helper'
 import CustomInput from './CustomInput'
-import venveoLogo from './../assets/image/png/Footer-venveo-logo.png'
+import venveoLogo from './../assets/images/png/Footer-venveo-logo.png'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -11,13 +11,13 @@ const Footer = () => {
                 <div className="flex flex-wrap w-full justify-between items-start lg:pb-[87px]">
                     <div className="xl:w-8/12 w-full flex justify-center flex-wrap">
                         {FOOTER_LIST.map((item, index) => (
-                            <div key={index} className="lg:w-3/12 md:w-4/12 w-6/12 mt-5 lg:mt-0 flex flex-col max-xl:items-center max-sm:items-start max-sm:ps-5 text-start text-white">
+                            <div key={index} className="md:w-3/12 w-6/12 mt-5 lg:mt-0 flex flex-col max-xl:items-center max-sm:items-start max-sm:ps-5 text-start text-white">
                                 <div>
                                     <h4 className='lg:mb-[25px] mb-4 uppercase font-medium text-xs'>{item.tittle}</h4>
                                     <ul>
-                                        {item.links.map((link, i) => (
+                                        {item.content.map((link, i) => (
                                             <li key={i} className='!leading-[170%]'>
-                                                <a className='text-[15px] font-light font-maisonNeueLight' href={link.url}>{link.name}</a>
+                                                <a className='text-[15px] font-light font-maisonNeueLight hover:text-yellowGreen' href={link.link}>{link.name}</a>
                                             </li>
                                         ))}
                                     </ul>

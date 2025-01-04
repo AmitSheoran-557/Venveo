@@ -3,7 +3,7 @@ import CustomHeading from '../common/CustomHeading'
 import Description from '../common/Description'
 import { AngleIcon } from '../utils/icons'
 import { LEARN_FORM_LIST, LEARN_FORM_SECOND_LIST } from '../utils/helper'
-import lineImg from './../assets/image/png/line-img.png'
+import lineImg from './../assets/images/png/line-img.png'
 
 const LearnForm = () => {
     return (

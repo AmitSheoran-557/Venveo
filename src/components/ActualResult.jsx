@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 import { UsIcon } from '../utils/icons';
 import { RESULT_SLIDER_LIST } from '../utils/helper';
@@ -32,7 +33,6 @@ const ActualResult = () => {
                         }}
                         pagination={{
                             clickable: true,
-                            el: '.swiper-pagination-bullet',
                         }}
 
                         breakpoints={{
@@ -53,8 +53,8 @@ const ActualResult = () => {
                         {RESULT_SLIDER_LIST.map((slide, index) => (
                             <SwiperSlide key={index}>
                                 <div className="text-center">
-                                    <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full xl:min-w-[640px] max-w-[1440px] mx-auto" />
-                                    <p className="text-white xl:pt-[74px] lg:pt-16 md:pt-12 pt-[30px] !leading-[132%] font-maisonLight font-light max-w-[603px] max-sm:px-4 mx-auto lg:text-3xl text-2xl">
+                                    <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full xl:min-w-[640px] md:max-w-[640px] max-w-[370px] mx-auto" />
+                                    <p className="text-white xl:pt-[74px] lg:pt-16 md:pt-12 pt-[30px] !leading-[132%] font-maisonLight font-light sm:max-w-[603px] max-w-[375px] w-full max-sm:px-4 mx-auto lg:text-3xl text-2xl">
                                         {`"${slide.description}"`}
                                     </p>
                                     <p className="text-white font-normal pt-6 font-maisonRegular text-[15px]">
@@ -66,7 +66,6 @@ const ActualResult = () => {
                                     <p className="text-center pt-[9px] lg:pb-[133px] md:pb-28 pb-[89px] mx-auto flex items-center justify-center">
                                         <UsIcon />
                                     </p>
-                                    <div className='pb-17px'></div>
                                 </div>
                             </SwiperSlide>
                         ))}

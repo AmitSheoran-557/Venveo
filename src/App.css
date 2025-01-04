@@ -36,7 +36,9 @@
 .swiper-pagination-bullet{
   border-radius: 0 !important;
   background: #FFFFFF4D !important;
- 
+}
+.swiper-pagination{
+  margin-bottom: 50px !important;
 }
 .swiper-pagination-bullet-active{
 background: white !important;

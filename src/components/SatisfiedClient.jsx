@@ -1,9 +1,8 @@
 import React from 'react'
 import Description from '../common/Description'
-import CustomHeading from '../common/CustomHeading'
 import { CLIENTS_DATA_LIST } from '../utils/helper'
 import { LearnMoreIcon } from '../utils/icons'
-import redUnderline from './../assets/image/png/red-underline-img.png'
+import redUnderline from './../assets/images/png/red-underline-img.png'
 
 
 const SatisfiedClient = () => {

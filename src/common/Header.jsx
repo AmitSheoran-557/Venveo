@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { HEADER_DATA_LIST } from '../utils/helper';
 import { ArrowIcon, SearchIcon } from '../utils/icons';
-import startBtn from './../assets/image/png/sm-btn-img.png';
-import logo from './../assets/image/png/venveo-logo.png';
+import startBtn from './../assets/images/png/sm-btn-img.png';
+import logo from './../assets/images/png/venveo-logo.png';
 
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -96,7 +96,7 @@ const Header = () => {
             >
               <img src={startBtn} alt="satrt-btn" />
             </button>
-            <div className="cursor-pointer" onClick={toggleModal}>
+            <div  onClick={toggleModal}>
               <SearchIcon />
               {isModalOpen && (
                 <div

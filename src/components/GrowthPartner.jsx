@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CustomHeading from '../common/CustomHeading';
 import Description from '../common/Description';
-import greenLine from './../assets/image/png/green-lines-bg.png';
-import redLine from './../assets/image/png/red-line-img.png';
-import TabThreeCard from './../assets/image/png/tab-three-card-img.png';
-import Partner from './../assets/image/png/partners-logo-img.png';
-import TabOneCard from './../assets/image/png/tab-one-card.png';
-import CircleImg from './../assets/image/png/tab-two-sm-circles.png';
+import greenLine from './../assets/images/png/green-lines-bg.png';
+import redLine from './../assets/images/png/red-line-img.png';
+import TabThreeCard from './../assets/images/png/tab-three-card-img.png';
+import Partner from './../assets/images/png/partners-logo-img.png';
+import TabOneCard from './../assets/images/png/tab-one-card.png';
+import CircleImg from './../assets/images/png/tab-two-sm-circles.png';
 import { ButtonArrow, LogoIpsumIcon, NetworkLogo } from '../utils/icons';
 
 const GrowthPartner = () => {
@@ -38,7 +38,7 @@ const GrowthPartner = () => {
                             <h3 className='text-white font-bold uppercase lg:text-[80px] text-[60px] font-sohneSchmal leading-[70px] max-w-[385px]'>The smartest minds in the industry</h3>
                             <p className='max-w-[360px] font-light text-3xl max-md:text-2xl text-white leading-[30px]'>Answer our questions and listen to our answers.</p>
                             <p className='max-w-[360px] mt-[31px] font-normal text-[15px] font-maisonMedium leading-[20px] font-spaceMono text-white'>This is placeholder but can add more the business of building, some epic fails (and how to avoid them) and everything building science.</p>
-                            <button className='max-lg:mb-6 max-sm:px-5 max-sm:py-4 max-sm:max-w-[245px] text-white font-medium font-maisonMedium text-[15px] flex items-center py-[34.84px] px-[30px] border border-solid max-w-[250px] w-full bg-[#FF4242] border-[#FF4242] gap-[10px] mt-[58px]'> <NetworkLogo/> Subscribe to Podcast <span className='text-[6px]'>▼</span></button>
+                            <button className='max-lg:mb-6 max-sm:px-5 max-sm:py-4 max-sm:max-w-[245px] text-white font-medium hover:scale-[1.07] transition-all duration-300 ease-linear font-maisonMedium text-[15px] flex items-center py-[34.84px] px-[30px] border border-solid max-w-[250px] w-full bg-[#FF4242] border-[#FF4242] gap-[10px] mt-[58px]'> <NetworkLogo/> Subscribe to Podcast <span className='text-[6px]'>▼</span></button>
                         </div>
                         <div className='overflow-auto scrollbar'>
                             <img src={Partner} alt="logo" className='max-md:px-4  lg:hidden mx-auto min-w-[701px] max-sm:overflow-x-auto whitespace-nowrap' />
@@ -51,7 +51,7 @@ const GrowthPartner = () => {
 
         if (activeTab === 2) {
             return (
-                <div className='bg-cover bg-no-repeat bg-center lg:bg-tabBgTwo max-lg:bg-tabTwoSmBg w-full max-w-[1337px] lg:h-[720px] mx-auto'>
+                <div className='bg-cover bg-no-repeat bg-center lg:bg-tabBgTwo max-lg:bg-tabTwoSmBg w-full max-w-[1280px] lg:h-[720px] mx-auto'>
                     <div className='pt-[75px] ps-[89px] max-lg:p-12 max-md:p-8 max-sm:p-0 max-sm:pt-[37px]'>
                         <h3 className='text-white font-bold uppercase lg:text-[80px] max-sm:pl-[19px] text-[60px] font-sohneSchmal leading-[70px]'>Proven Results</h3>
                         <p className='max-w-[360px] font-light text-3xl max-md:text-2xl max-lg:pb-7 max-sm:pl-[19px] text-white leading-[30px]'>Not hopes and prayers.</p>
@@ -63,14 +63,14 @@ const GrowthPartner = () => {
 
         if (activeTab === 3) {    
             return (
-                <div className='lg:bg-tabBgThree max-lg:bg-tabThreeSmBg bg-cover bg-center bg-no-repeat w-full max-w-[1337px] lg:h-[720px] mx-auto'>
+                <div className='lg:bg-tabBgThree max-lg:bg-tabThreeSmBg bg-cover bg-center bg-no-repeat w-full max-w-[1280px] lg:h-[720px] mx-auto'>
                     <div className='pt-[75px] ps-[79px] max-lg:p-12 max-md:p-8 max-sm:p-[19px] '>
                         <h3 className='text-white font-bold mb-3 lg:text-[80px] text-[60px] font-sohneSchmal leading-[70px]'>Project radar</h3>
                         <p><LogoIpsumIcon /></p>
                         <p className='pt-[162px] max-xl:pt-24 max-lg:pt-16 max-md:pt-11 max-sm:pt-8 max-w-[360px] font-light text-3xl max-md:text-2xl text-white leading-[30px]'>Lorem ipsum what this
                             product actually does.</p>
                         <p className='font-normal text-[15px] leading-[20px] text-white font-spaceMono max-w-[360px] mt-[14px]'>This is placeholder but can add more the business of building, some epic fails (and how to avoid them) and everything building science.</p>
-                        <button className='max-lg:mb-6 mt-[57px] flex items-center text-black text-customsm font-semibold leading-[15px] py-[31px] gap-[10px] px-[22px] border border-solid bg-[#D2F038] border-[#D2F038] sm:max-w-[279px] w-full justify-center max-w-sm'>Call to Action Somewhere <ButtonArrow /> </button>
+                        <button className='max-lg:mb-6 mt-[57px] hover:scale-[1.07] transition-all duration-300 ease-linear flex items-center text-black text-customsm font-semibold leading-[15px] py-[31px] gap-[10px] px-[22px] border border-solid bg-[#D2F038] border-[#D2F038] sm:max-w-[279px] w-full justify-center max-w-sm'>Call to Action Somewhere <ButtonArrow /> </button>
                         <img src={TabThreeCard} alt="card-data" className='lg:hidden w-full max-w-sm mx-auto max-lg:block' />
                     </div>
                 </div>

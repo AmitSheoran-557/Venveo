@@ -1,8 +1,7 @@
 import React from 'react'
-import CustomHeading from '../common/CustomHeading'
 import Description from '../common/Description'
 import CustomInput from '../common/CustomInput'
-import CurveLine from '../../src/assets/image/png/curve-line-img.png'
+import CurveLine from '../../src/assets/images/png/curve-line-img.png'
 
 const OutSmart = () => {
     return (

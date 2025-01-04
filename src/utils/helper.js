@@ -1,13 +1,13 @@
-import logoImgOne from '../../src/assets/image/png/client-card-logo-1.png'
-import logoImgTwo from '../../src/assets/image/png/client-card-logo-2.png'
-import logoImgThree from '../../src/assets/image/png/client-card-logo-3.png'
-import sliderImgOne from '../../src/assets/image/png/slider-img-1.png'
-import sliderImgTwo from '../../src/assets/image/png/slider-img-3.png'
-import sliderImgThree from '../../src/assets/image/png/slider-img-2.png'
+import logoImgOne from '../../src/assets/images/png/client-card-logo-1.png'
+import logoImgTwo from '../../src/assets/images/png/client-card-logo-2.png'
+import logoImgThree from '../../src/assets/images/png/client-card-logo-3.png'
+import sliderImgOne from '../../src/assets/images/png/slider-img-1.png'
+import sliderImgTwo from '../../src/assets/images/png/slider-img-3.png'
+import sliderImgThree from '../../src/assets/images/png/slider-img-2.png'
 import { CplIcon, CrossIcon, TrafficIcon, LeadsIcon, AngleIcon, FacebookIcon, InstagramIcon, TwitterIcon, LinkedInIcon, YoutubeIcon, } from "./icons";
-import cardImgOne from './../assets/image/png/learn-card-img-1.png'
-import cardImgTwo from './../assets/image/png/learn-card-img-2.png'
-import cardImgThree from './../assets/image/png/learn-card-img-3.png'
+import cardImgOne from './../assets/images/png/learn-card-img-1.png'
+import cardImgTwo from './../assets/images/png/learn-card-img-2.png'
+import cardImgThree from './../assets/images/png/learn-card-img-3.png'
 
 export const HEADER_DATA_LIST = [
   {
@@ -221,41 +221,41 @@ export const LEARN_FORM_SECOND_LIST = [
 export const FOOTER_LIST = [
   {
     tittle: "how we help",
-    links: [
-      { name: "Drive More Awareness", url: "/awareness" },
-      { name: "Get more Customers", url: "/customers" },
-      { name: "Build Your Brand", url: "/build" },
-      { name: "Improve your reputation", url: "/improve" },
-      { name: "Track Results", url: "/result" },
+   content: [
+      { name: "Drive More Awareness",link: "/awareness" },
+      { name: "Get more Customers",link: "/customers" },
+      { name: "Build Your Brand",link: "/build" },
+      { name: "Improve your reputation",link: "/improve" },
+      { name: "Track Results",link: "/result" },
     ]
   },
   {
     tittle: "who we help",
-    links: [
-      { name: "Digital Advertising", url: "/advertising" },
-      { name: "Search Engine Ranking", url: "/ranking" },
-      { name: "Content Marketing", url: "/contentMarketing" },
-      { name: "Programic Advertising", url: "/advertising" },
-      { name: "Email Marketing", url: "/emailMarketing" },
+   content: [
+      { name: "Digital Advertising",link: "/advertising" },
+      { name: "Search Engine Ranking",link: "/ranking" },
+      { name: "Content Marketing",link: "/contentMarketing" },
+      { name: "Programic Advertising",link: "/advertising" },
+      { name: "Email Marketing",link: "/emailMarketing" },
     ]
   },
   {
     tittle: "why venveo",
-    links: [
-      { name: "About Us", url: "/about" },
-      { name: "Careers", url: "/careers" },
-      { name: "Growth Studies", url: "/growth" },
-      { name: "Testimonials", url: "/Testimonials" },
+   content: [
+      { name: "About Us",link: "/about" },
+      { name: "Careers",link: "/careers" },
+      { name: "Growth Studies",link: "/growth" },
+      { name: "Testimonials",link: "/Testimonials" },
     ]
   },
   {
     tittle: "why venveo",
-    links: [
-      { name: "Articles", url: "/Articles" },
-      { name: "News", url: "/News" },
-      { name: "Webinars", url: "/Webinars" },
-      { name: "eBooks", url: "/eBooks" },
-      { name: "Podcast", url: "/Podcast" },
+   content: [
+      { name: "Articles",link: "/Articles" },
+      { name: "News",link: "/News" },
+      { name: "Webinars",link: "/Webinars" },
+      { name: "eBooks",link: "/eBooks" },
+      { name: "Podcast",link: "/Podcast" },
     ]
   }
 ];

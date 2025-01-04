@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; // Slick slider styles
 import "slick-carousel/slick/slick-theme.css"; // Slick theme styles
 import Description from '../common/Description'
-import logoOne from './../assets/image/png/featured-img-1.png'
-import logoTwo from './../assets/image/png/featured-img-2.png'
-import logoThree from './../assets/image/png/featured-img-3.png'
-import logoFour from './../assets/image/png/featured-img-4.png'
-import logoFive from './../assets/image/png/featured-img-5.png'
-import blueLine from './../assets/image/png/skyblue-line.png'
+import logoOne from './../assets/images/png/featured-img-1.png'
+import logoTwo from './../assets/images/png/featured-img-2.png'
+import logoThree from './../assets/images/png/featured-img-3.png'
+import logoFour from './../assets/images/png/featured-img-4.png'
+import logoFive from './../assets/images/png/featured-img-5.png'
+import blueLine from './../assets/images/png/skyblue-line.png'
 
 const Features = () => {
     var settings = {
