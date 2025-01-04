@@ -72,7 +72,7 @@ const Header = () => {
                   onClick={() => handleClick(index)}
                   className="cursor-pointer font-medium text-[15px]"
                 >
-                  {obj.name} <span className="text-[6px]">{obj.icon}</span>
+                  {obj.title} <span className="text-[6px]">{obj.icon}</span>
                 </p>
                 {obj.submenu && activeIndex === index && (
                   <div className="absolute right-0 lg:bg-white lg:!text-black bg-black flex flex-col gap-3 text-white px-7 py-3 rounded mt-2">

@@ -8,16 +8,16 @@ import redUnderline from './../assets/images/png/red-underline-img.png'
 const SatisfiedClient = () => {
     return (
         <div className='flex justify-center flex-col items-center xl:mt-[94px] lg:mt-20 mt-12 max-xl:px-4'>
-            <Description className="!font-light xl:!text-3xl !text-2xl max-md:px-16 text-center lg:mb-[7px] mb-1" tittle="Driving digital revenue for over" />
+            <Description className="!font-light xl:!text-3xl !text-2xl max-md:px-16 text-center lg:mb-[7px] mb-1" title="Driving digital revenue for over" />
             <div className='relative lg:mb-[88px] md:mb-10 mb-12'>
                 <h2 className='uppercase lg:!text-[80px] !text-[60px] !leading-[87%] font-bold text-black font-sohneSchmal text-center'><span className='relative'>1,400+  <img className='absolute lg:-bottom-0 bottom-1.5 xl:max-w-[120px] left-0 w-full max-w-24' src={redUnderline} alt="underline" /></span> satisfied clients.</h2>
             </div>
             <div className='flex flex-wrap justify-center items-center lg:gap-[60px] sm:gap-10 gap-7'>
                 {CLIENTS_DATA_LIST.map((obj, index) => (
-                    <div className={`max-w-[440px] lg:px-[29px] md:px-6 sm:px-5 px-4 lg:min-h-[500px] sm:min-h-[350px] min-h-[460px] pt-[35px] bg-cover ${index === 1 ? "bg-cardImgTwo" : index === 2 ? "bg-cardImgThree" : "bg-cardImgOne"}`} key={index} >
+                    <div className={`max-w-[440px] lg:px-[29px] md:px-6 sm:px-5 px-4 lg:min-h-[500px] md:min-h-[425px] sm:min-h-[350px] min-h-[460px] pt-[35px] bg-cover ${index === 1 ? "bg-cardImgTwo" : index === 2 ? "bg-cardImgThree" : "bg-cardImgOne"}`} key={index} >
                         <div className='rounded-[25px] max-w-[382px] lg:px-7 sm:px-5 px-[22px] !pt-[38px] !pb-[32px] max-lg:py-7 max-sm:py-5 bg-white lg:min-h-[360px] min-h-[250px] mb-[13px] relative'>
                             <div className="max-w-[165px] absolute max-lg:hidden -top-[14px] lg:min-w-[165px] lg:ps-3 ps-2 w-full lg:py-[7px] py-1 rounded-full duration-300 ease-linear " style={{ backgroundColor: obj.bgBlack, color: obj.color }}>
-                                <p className='text-black font-semibold text-xs font-maisonNeue' style={{ color: obj.color }}>{obj.tittle}</p>
+                                <p className='text-black font-semibold text-xs font-maisonNeue' style={{ color: obj.color }}>{obj.title}</p>
                             </div>
                             <div className='mb-6'>
                                 <img src={obj.logo} style={{ maxWidth: obj.maxWidth }} alt="logo-img" />

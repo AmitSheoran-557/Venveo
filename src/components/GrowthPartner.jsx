@@ -3,7 +3,9 @@ import { useSearchParams } from 'react-router-dom';
 import CustomHeading from '../common/CustomHeading';
 import Description from '../common/Description';
 import greenLine from './../assets/images/png/green-lines-bg.png';
-import redLine from './../assets/images/png/red-line-img.png';
+import tabUnderlineOne from './../assets/images/png/red-line-img.png';
+import tabUnderlineTwo from './../assets/images/png/tabs-underline-2.png';
+import tabUnderlineThree from './../assets/images/png/tabs-underline-3.png';
 import TabThreeCard from './../assets/images/png/tab-three-card-img.png';
 import Partner from './../assets/images/png/partners-logo-img.png';
 import TabOneCard from './../assets/images/png/tab-one-card.png';
@@ -32,18 +34,18 @@ const GrowthPartner = () => {
     const TabContent = () => {
         if (activeTab === 1) {
             return (
-                <div className='bg-cover bg-no-repeat bg-center lg:bg-tabBgOne max-lg:bg-tabOneSmBg w-full max-w-[1280px] lg:h-[720px] mx-auto'>
-                    <div className='ps-[79px] pt-[75px] max-lg:p-12 max-md:p-8 max-sm:p-0'>
-                        <div className=' max-sm:px-[19px] max-sm:pt-9'>
+                <div className='bg-cover bg-no-repeat lg:bg-center lg:bg-tabBgOne max-lg:bg-tabOneSmBg w-full max-w-[1280px] lg:h-[720px] mx-auto'>
+                    <div className='ps-[79px] pt-[75px] max-lg:p-12 max-md:p-8 max-sm:px-0 max-sm:pb-5'>
+                        <div className=' max-sm:px-[19px]'>
                             <h3 className='text-white font-bold uppercase lg:text-[80px] text-[60px] font-sohneSchmal leading-[70px] max-w-[385px]'>The smartest minds in the industry</h3>
                             <p className='max-w-[360px] font-light text-3xl max-md:text-2xl text-white leading-[30px]'>Answer our questions and listen to our answers.</p>
                             <p className='max-w-[360px] mt-[31px] font-normal text-[15px] font-maisonMedium leading-[20px] font-spaceMono text-white'>This is placeholder but can add more the business of building, some epic fails (and how to avoid them) and everything building science.</p>
-                            <button className='max-lg:mb-6 max-sm:px-5 max-sm:py-4 max-sm:max-w-[245px] text-white font-medium hover:scale-[1.07] transition-all duration-300 ease-linear font-maisonMedium text-[15px] flex items-center py-[34.84px] px-[30px] border border-solid max-w-[250px] w-full bg-[#FF4242] border-[#FF4242] gap-[10px] mt-[58px]'> <NetworkLogo/> Subscribe to Podcast <span className='text-[6px]'>▼</span></button>
+                            <button className='max-lg:mb-6 max-sm:px-5 max-sm:py-4 max-sm:max-w-[245px] text-white font-medium hover:scale-[1.07] transition-all duration-300 ease-linear font-maisonMedium text-[15px] flex items-center py-[34.84px] px-[30px] border border-solid max-w-[250px] w-full bg-[#FF4242] border-[#FF4242] gap-[10px] mt-[58px]'> <NetworkLogo /> Subscribe to Podcast <span className='text-[6px]'>▼</span></button>
                         </div>
                         <div className='overflow-auto scrollbar'>
                             <img src={Partner} alt="logo" className='max-md:px-4  lg:hidden mx-auto min-w-[701px] max-sm:overflow-x-auto whitespace-nowrap' />
                         </div>
-                            <img src={TabOneCard} alt="card" className='lg:hidden max-w-[320px] mt-5 mx-auto' />
+                        <img src={TabOneCard} alt="card" className='lg:hidden max-w-[320px] mt-5 mx-auto' />
                     </div>
                 </div>
             );
@@ -61,7 +63,7 @@ const GrowthPartner = () => {
             );
         }
 
-        if (activeTab === 3) {    
+        if (activeTab === 3) {
             return (
                 <div className='lg:bg-tabBgThree max-lg:bg-tabThreeSmBg bg-cover bg-center bg-no-repeat w-full max-w-[1280px] lg:h-[720px] mx-auto'>
                     <div className='pt-[75px] ps-[79px] max-lg:p-12 max-md:p-8 max-sm:p-[19px] '>
@@ -82,16 +84,16 @@ const GrowthPartner = () => {
     return (
         <div className='xl:pt-[113px] lg:pt-24 md:pt-20 pt-16 lg:pb-[90px] pb-20 relative overflow-hidden'>
             <img className='absolute lg:bottom-[59px] bottom-5 min-h-10 overflow-auto -z-10 w-full' src={greenLine} alt="green line" />
-            <CustomHeading className="uppercase lg:!text-[80px] !text-[60px] max-sm:px-3 leading-[100%]" tittle="The growth partner " />
-            <Description className="text-center lg:!text-3xl !text-2xl !font-light font-maisonNeueLight" tittle="you’ve been looking for." />
-            <Description className="lg:!mt-[36px] md:mt-6 mt-5 font-normal max-sm:px-12 !text-[15px] !text-black !leading-[20px] font-spaceMono !text-center" tittle="Businesses trust Venveo to power grow." />
+            <CustomHeading className="uppercase lg:!text-[80px] !text-[60px] max-sm:px-3 leading-[100%]" title="The growth partner " />
+            <Description className="text-center lg:!text-3xl !text-2xl !font-light font-maisonNeueLight" title="you’ve been looking for." />
+            <Description className="lg:!mt-[36px] md:mt-6 mt-5 font-normal max-sm:px-12 !text-[15px] !text-black !leading-[20px] font-spaceMono !text-center" title="Businesses trust Venveo to power grow." />
 
             <div className='tabs-parent lg:mt-[95px] mt-20 max-xl:mt-16 max-lg:mt-10 max-md:mt-8 relative z-20'>
-                <div className='relative flex items-center max-lg:overflow-x-auto scrollbar overflow-y-visible py-3 w-full scroll-m-0 max-lg:px-4 sm:justify-center xl:gap-[78px] lg:gap-16 gap-12'>
+                <div className='relative flex items-center max-lg:overflow-x-auto scrollbar overflow-y-visible sm:py-3 max-sm:pt-3 max-sm:pb-4 w-full scroll-m-0 max-lg:px-4 sm:justify-center xl:gap-[78px] lg:gap-16 gap-12'>
                     <p className={`text-lg font-semibold text-black opacity-[35%] max-sm:whitespace-nowrap leading-[18px] font-maisonNeue cursor-pointer ${activeTab === 1 ? 'text-black !opacity-[100%] transition-all ease-linear duration-200' : ''}`}
                         onClick={() => handleTabClick(1)} > Industry Expertise
                         {activeTab === 1 && (
-                            <img src={redLine} alt="redline"
+                            <img src={tabUnderlineOne} alt="redline"
                                 className="mx-auto absolute" />
                         )}
                     </p>
@@ -99,7 +101,7 @@ const GrowthPartner = () => {
                         onClick={() => handleTabClick(2)}>
                         ROI Focused
                         {activeTab === 2 && (
-                            <img src={redLine} alt="redline"
+                            <img src={tabUnderlineTwo} alt="redline"
                                 className="mx-auto absolute" />
                         )}
                     </p>
@@ -107,7 +109,7 @@ const GrowthPartner = () => {
                         onClick={() => handleTabClick(3)}>
                         Proprietary Technology
                         {activeTab === 3 && (
-                            <img src={redLine} alt="redline"
+                            <img src={tabUnderlineThree} alt="redline"
                                 className="mx-auto absolute" />
                         )}
                     </p>

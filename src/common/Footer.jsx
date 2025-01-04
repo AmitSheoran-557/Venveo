@@ -13,7 +13,7 @@ const Footer = () => {
                         {FOOTER_LIST.map((item, index) => (
                             <div key={index} className="md:w-3/12 w-6/12 mt-5 lg:mt-0 flex flex-col max-xl:items-center max-sm:items-start max-sm:ps-5 text-start text-white">
                                 <div>
-                                    <h4 className='lg:mb-[25px] mb-4 uppercase font-medium text-xs'>{item.tittle}</h4>
+                                    <h4 className='lg:mb-[25px] mb-4 uppercase font-medium text-xs'>{item.title}</h4>
                                     <ul>
                                         {item.content.map((link, i) => (
                                             <li key={i} className='!leading-[170%]'>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                     <div className="xl:w-4/12 w-full flex flex-col mx-auto max-md:px-4 flex-wrap justify-start xl:items-start items-center xl:mt-0 lg:mt-10 mt-7">
                         <h3 className='font-light font-maisonNeueLight text-white lg:text-3xl text-2xl lg:mb-[35px] mb-[22px] text-center lg:whitespace-nowrap'>Get weekly data — and insights.</h3>
-                        <CustomInput placeholderTittle="Enter Your Email" className="!mx-0 !max-w-[449px] w-full xl:min-w-[449px] !mb-0" btnTittle="Get Started" customClass="!text-white placeholder:!text-white placeholder:!opacity-[100%] !opacity-[100%]" customClassTwo="!text-yellowGreen" />
+                        <CustomInput placeholdertitle="Enter Your Email" className="!mx-0 !max-w-[449px] w-full xl:min-w-[449px] !mb-0" btnTitle="Get Started" customClass="!text-white placeholder:!text-white placeholder:!opacity-[100%] !opacity-[100%]" customClassTwo="!text-yellowGreen" />
                     </div>
                 </div>
                 <div className='w-full flex justify-between items-end px-4 xl:px-0 max-lg:hidden'>

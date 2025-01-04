@@ -12,7 +12,7 @@ import cardImgThree from './../assets/images/png/learn-card-img-3.png'
 export const HEADER_DATA_LIST = [
   {
     url: "/",
-    name: "How We Help",
+    title: "How We Help",
     icon: "▼",
     submenu: [
       "Account",
@@ -21,8 +21,8 @@ export const HEADER_DATA_LIST = [
     ]
   },
   {
-    url: "/",
-    name: "Who We Help",
+    link: "/",
+    title: "Who We Help",
     icon: "▼",
     submenu: [
       "Dummy",
@@ -31,8 +31,8 @@ export const HEADER_DATA_LIST = [
     ]
   },
   {
-    url: "/",
-    name: "Why Venveo",
+    link: "/",
+    title: "Why Venveo",
     icon: "▼",
     submenu: [
       "lorem",
@@ -41,8 +41,8 @@ export const HEADER_DATA_LIST = [
     ]
   },
   {
-    url: "/",
-    name: "Resources",
+    link: "/",
+    title: "Resources",
     icon: "▼",
     submenu: [
       "lorem",
@@ -51,9 +51,10 @@ export const HEADER_DATA_LIST = [
     ]
   },
 ];
+
 export const CLIENTS_DATA_LIST = [
   {
-    tittle: "Education Company",
+    title: "Education Company",
     bgBlack: "#000000",
     color: "#ffffff",
     logo: logoImgOne,
@@ -69,7 +70,7 @@ export const CLIENTS_DATA_LIST = [
     traffic: "Web Traffic",
   },
   {
-    tittle: "HVAC Marketing",
+    title: "HVAC Marketing",
     logo: logoImgTwo,
     maxWidth: "149px",
     heading: "Driving digital revenue for over 1,000+ satisfied clients.",
@@ -96,7 +97,8 @@ export const CLIENTS_DATA_LIST = [
     traffic: "Web Traffic",
   }
 ];
-export const MARKETING_CARD_LIST = [
+
+export const MARKETING_CARDS_LIST = [
   {
     logo: <TrafficIcon />,
     title: "My website isn’t getting enough traffic",
@@ -105,7 +107,6 @@ export const MARKETING_CARD_LIST = [
     listOne: "Boost your presence in search results",
     listTwo: "Capture targeted site traffic",
     listThree: "Turn site visitors into customers",
-    btn: "Explore SEO Services ",
   },
   {
     logo: <CplIcon />,
@@ -115,7 +116,6 @@ export const MARKETING_CARD_LIST = [
     listOne: "Refine ad targeting",
     listTwo: "Engage your audience where they browse online",
     listThree: "Maximize paid ad budget",
-    btn: "Explore SEO Services ",
   },
   {
     logo: <LeadsIcon />,
@@ -125,7 +125,6 @@ export const MARKETING_CARD_LIST = [
     listOne: "Fill up your lead pipeline",
     listTwo: "Reach your most valuable audience",
     listThree: "Maximize conversion opportunities",
-    btn: "Explore SEO Services ",
   },
   {
     logo: <CrossIcon />,
@@ -135,9 +134,9 @@ export const MARKETING_CARD_LIST = [
     listOne: "Unify sales and marketing data",
     listTwo: "Prioritize leads with data-backed insights",
     listThree: "Turn opportunities into closed deals",
-    btn: "Explore SEO Services ",
   },
 ];
+
 export const RESULT_SLIDER_LIST = [
   {
     image: sliderImgOne,
@@ -182,21 +181,23 @@ export const RESULT_SLIDER_LIST = [
     title: "REGIONAL VP-SE AT US LBM",
   },
 ];
-export const LEARN_FORM_LIST = [
+
+export const LEARN_FROM_LIST = [
   {
     category: "guides",
-    tittle: "Marketing to Contractors and Installers:",
-    tittleTwo: " The Ultimate Guide",
+    title: "Marketing to Contractors and Installers:",
+    titleTwo: " The Ultimate Guide",
     description: "Understanding the process and maximize the opportunities",
     btn: "Read More",
     arrow: <AngleIcon />,
   },
 ];
-export const LEARN_FORM_SECOND_LIST = [
+
+export const LEARN_FROM_SECOND_LIST = [
   {
     bgImg: cardImgOne,
     category: "multi-channel marketing",
-    tittle: "How to Get Your Product into Lowe's",
+    title: "How to Get Your Product into Lowe's",
     description: "Understanding the process and maximize the opportunities",
     btn: "Read More",
     arrow: <AngleIcon />,
@@ -204,7 +205,7 @@ export const LEARN_FORM_SECOND_LIST = [
   {
     bgImg: cardImgTwo,
     category: "lead-gen",
-    tittle: "Get Your Sales Team Ready for Digital Leads",
+    title: "Get Your Sales Team Ready for Digital Leads",
     description: "unlock substantial business growth by enhancing collaboration skills and digital marketing expertise",
     btn: "Read More",
     arrow: <AngleIcon />,
@@ -212,72 +213,74 @@ export const LEARN_FORM_SECOND_LIST = [
   {
     bgImg: cardImgThree,
     category: "ecommerce",
-    tittle: "How to Sell Building Materials Online",
+    title: "How to Sell Building Materials Online",
     description: "Explore how selling building materials online opens up wider audiences, efficient sales and insightful data,",
     btn: "Read More",
     arrow: <AngleIcon />,
   },
 ];
+
 export const FOOTER_LIST = [
   {
-    tittle: "how we help",
-   content: [
-      { name: "Drive More Awareness",link: "/awareness" },
-      { name: "Get more Customers",link: "/customers" },
-      { name: "Build Your Brand",link: "/build" },
-      { name: "Improve your reputation",link: "/improve" },
-      { name: "Track Results",link: "/result" },
+    title: "how we help",
+    content: [
+      { name: "Drive More Awareness", link: "/awareness" },
+      { name: "Get more Customers", link: "/customers" },
+      { name: "Build Your Brand", link: "/build" },
+      { name: "Improve your reputation", link: "/improve" },
+      { name: "Track Results", link: "/result" },
     ]
   },
   {
-    tittle: "who we help",
-   content: [
-      { name: "Digital Advertising",link: "/advertising" },
-      { name: "Search Engine Ranking",link: "/ranking" },
-      { name: "Content Marketing",link: "/contentMarketing" },
-      { name: "Programic Advertising",link: "/advertising" },
-      { name: "Email Marketing",link: "/emailMarketing" },
+    title: "who we help",
+    content: [
+      { name: "Digital Advertising", link: "/advertising" },
+      { name: "Search Engine Ranking", link: "/ranking" },
+      { name: "Content Marketing", link: "/contentMarketing" },
+      { name: "Programic Advertising", link: "/advertising" },
+      { name: "Email Marketing", link: "/emailMarketing" },
     ]
   },
   {
-    tittle: "why venveo",
-   content: [
-      { name: "About Us",link: "/about" },
-      { name: "Careers",link: "/careers" },
-      { name: "Growth Studies",link: "/growth" },
-      { name: "Testimonials",link: "/Testimonials" },
+    title: "why venveo",
+    content: [
+      { name: "About Us", link: "/about" },
+      { name: "Careers", link: "/careers" },
+      { name: "Growth Studies", link: "/growth" },
+      { name: "Testimonials", link: "/Testimonials" },
     ]
   },
   {
-    tittle: "why venveo",
-   content: [
-      { name: "Articles",link: "/Articles" },
-      { name: "News",link: "/News" },
-      { name: "Webinars",link: "/Webinars" },
-      { name: "eBooks",link: "/eBooks" },
-      { name: "Podcast",link: "/Podcast" },
+    title: "why venveo",
+    content: [
+      { name: "Articles", link: "/Articles" },
+      { name: "News", link: "/News" },
+      { name: "Webinars", link: "/Webinars" },
+      { name: "eBooks", link: "/eBooks" },
+      { name: "Podcast", link: "/Podcast" },
     ]
   }
 ];
+
 export const MEDIA_ICON_LIST = [
   {
-      icon: <FacebookIcon/>,
-      link: "https://www.facebook.com",
+    icon: <FacebookIcon />,
+    link: "https://www.facebook.com",
   },
   {
-      icon: <InstagramIcon/>,
-      link: "https://www.instagram.com",
+    icon: <InstagramIcon />,
+    link: "https://www.instagram.com",
   },
   {
-      icon: <TwitterIcon/>,
-      link: "https://www.twitter.com",
+    icon: <TwitterIcon />,
+    link: "https://www.twitter.com",
   },
   {
-      icon: <LinkedInIcon/>,
-      link: "https://www.linkedin.com",
+    icon: <LinkedInIcon />,
+    link: "https://www.linkedin.com",
   },
   {
-      icon: <YoutubeIcon/>,
-      link: "https://www.youtube.com",
+    icon: <YoutubeIcon />,
+    link: "https://www.youtube.com",
   },
 ];

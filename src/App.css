@@ -4,31 +4,39 @@
 .slick-dots {
   width: 90% !important;
 }
+
 .slick-dots li button:before {
   color: darkcyan !important;
 }
+
 .slick-track {
   display: flex !important;
   align-items: center !important;
   padding-left: 120px !important;
 }
+
 .active-tab {
   opacity: 100%;
   transition: all 300ms linear;
 }
+
 .swiper-button-next:after {
   display: none !important;
 }
+
 .swiper-button-prev:after {
   display: none !important;
 }
+
 .scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .swiper-slide {
   opacity: 0.2;
   transition: opacity 0.3s ease;
 }
+
 .swiper-slide-active {
   opacity: 1;
 }
@@ -37,9 +45,11 @@
   border-radius: 0 !important;
   background: #FFFFFF4D !important;
 }
+
 .swiper-pagination{
   margin-bottom: 50px !important;
 }
+
 .swiper-pagination-bullet-active{
 background: white !important;
 }
